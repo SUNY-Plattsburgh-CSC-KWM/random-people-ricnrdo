@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQuerySample</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.5/d3.min.js"></script>
+<script src="PeopleDashboard.js" defer></script>
+<!-- https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l -->
+<!-- https://medium.com/@brajagopal.tripathi/how-to-change-the-text-color-on-a-mouseover-in-html-697f4d4210fa -->
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #ebedf3;
+  padding: 30px;
+  color: #333;
+}
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #00000014;
+  background: #fff;
+}
+
+.my-table thead {
+  background-color: #ebedf3;
+}
+
+.my-table th {
+  text-align: left;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #3a3f54;
+  border-bottom: 2px solid #e6e8ef;
+}
+
+.my-table td {
+  padding: 12px 18px;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid #ebedf3;
+}
+
+.my-table tr:hover {
+  background-color: #eef4ff;
+  color: #1a3261;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.my-table tr {
+  cursor: default;
+}
+
+.my-table tr:last-child td {
+  border-bottom: none;
+}
+
+.my-table tbody tr {
+  transition: background-color .2s ease, color .2s ease;
+}
+.my-table tbody tr:hover {
+  background-color: #eef4ff;
+}
+.my-table tbody tr:hover td {
+  color: #1a3261;
+}
+</style>
+<body>
+	<table class="my-table" id="people"> 
+		<thead>
+			<tr>
+			<th>Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip</th>
+			<th>Latitude</th>
+			<th>Longitude</th>
+			</tr>
+		</thead>
+		<tbody id="people-body">
+
+		</tbody>
+	</table>
+</body>
+</html>

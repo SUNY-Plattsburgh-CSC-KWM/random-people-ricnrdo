@@ -1,0 +1,9 @@
+I was struggling to parse the data from the fetch into something usable at first 
+since the randomuser API had some nested objects. It took me a while to figure 
+out how to extract the name, address, and location fields correctly without getting 
+any errors/no response. After that, I spent time trying to make the table look cleaner 
+with consistent spacing, fonts, and colors. I messed around with borders and shadows 
+until it looked more modern and less plain. The hover effect gave me a bit of trouble 
+too—I thought my tooltip wasn’t working, but it was actually a CSS issue with the 
+cursor. Once that was fixed, everything came together nicely and I was happy with 
+how smooth and organized the final table looked.
